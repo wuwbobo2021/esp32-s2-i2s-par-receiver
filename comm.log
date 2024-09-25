@@ -1,0 +1,204 @@
+<break>
+ESP-ROM:esp32s2-rc4-20191025
+Build:Oct 25 2019
+rst:0x1 (POWERON),boot:0xa (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3ffe5110,len:0x19f8
+load:0x4004a000,len:0x4
+load:0x4004a004,len:0xc8c
+load:0x4004e000,len:0x34ac
+entry 0x4004a1f4
+<0x1b>[0;32mI (23) boot: ESP-IDF v5.3-dirty 2nd stage bootloader<0x1b>[0m
+<0x1b>[0;32mI (24) boot: compile time Sep 23 2024 05:20:45<0x1b>[0m
+<0x1b>[0;32mI (24) boot: chip revision: v0.0<0x1b>[0m
+<0x1b>[0;32mI (27) qio_mode: Enabling default flash chip QIO<0x1b>[0m
+<0x1b>[0;32mI (33) boot.esp32s2: SPI Speed      : 80MHz<0x1b>[0m
+<0x1b>[0;32mI (38) boot.esp32s2: SPI Mode       : QIO<0x1b>[0m
+<0x1b>[0;32mI (42) boot.esp32s2: SPI Flash Size : 2MB<0x1b>[0m
+<0x1b>[0;32mI (47) boot: Enabling RNG early entropy source...<0x1b>[0m
+<0x1b>[0;32mI (52) boot: Partition Table:<0x1b>[0m
+<0x1b>[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length<0x1b>[0m
+<0x1b>[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000<0x1b>[0m
+<0x1b>[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000<0x1b>[0m
+<0x1b>[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000<0x1b>[0m
+<0x1b>[0;32mI (86) boot: End of partition table<0x1b>[0m
+<0x1b>[0;32mI (90) esp_image: segment 0: paddr=00010020 vaddr=3f000020 size=099ech ( 39404) map<0x1b>[0m
+<0x1b>[0;32mI (105) esp_image: segment 1: paddr=00019a14 vaddr=3ffc1f30 size=06604h ( 26116) load<0x1b>[0m
+<0x1b>[0;32mI (112) esp_image: segment 2: paddr=00020020 vaddr=40080020 size=163e8h ( 91112) map<0x1b>[0m
+<0x1b>[0;32mI (131) esp_image: segment 3: paddr=00036410 vaddr=3ffc8534 size=02788h ( 10120) load<0x1b>[0m
+<0x1b>[0;32mI (133) esp_image: segment 4: paddr=00038ba0 vaddr=40026000 size=0bf24h ( 48932) load<0x1b>[0m
+<0x1b>[0;32mI (155) boot: Loaded app from partition at offset 0x10000<0x1b>[0m
+<0x1b>[0;32mI (155) boot: Disabling RNG early entropy source...<0x1b>[0m
+<0x1b>[0;32mI (167) cache: Instruction cache 	: size 16KB, 4Ways, cache line size 16Byte<0x1b>[0m
+<0x1b>[0;32mI (167) cache: Data cache 		: size 8KB, 4Ways, cache line size 32Byte<0x1b>[0m
+<0x1b>[0;32mI (170) cpu_start: Unicore app<0x1b>[0m
+<0x1b>[0;32mI (174) cache: flash_count=1, size=16, spiram_count=0, size=0,together=0<0x1b>[0m
+<0x1b>[0;32mI (181) cache: Flash wrap enabled, size = 16.<0x1b>[0m
+<0x1b>[0;32mI (207) cpu_start: Pro cpu start user code<0x1b>[0m
+<0x1b>[0;32mI (207) cpu_start: cpu freq: 240000000 Hz<0x1b>[0m
+<0x1b>[0;32mI (207) app_init: Application information:<0x1b>[0m
+<0x1b>[0;32mI (210) app_init: Project name:     esp32s2_i2s_par_rec<0x1b>[0m
+<0x1b>[0;32mI (216) app_init: App version:      1<0x1b>[0m
+<0x1b>[0;32mI (220) app_init: Compile time:     Sep 26 2024 01:16:21<0x1b>[0m
+<0x1b>[0;32mI (226) app_init: ELF file SHA256:  dbfbd6205...<0x1b>[0m
+<0x1b>[0;32mI (231) app_init: ESP-IDF:          v5.3-dirty<0x1b>[0m
+<0x1b>[0;32mI (237) efuse_init: Min chip rev:     v0.0<0x1b>[0m
+<0x1b>[0;32mI (241) efuse_init: Max chip rev:     v1.99 <0x1b>[0m
+<0x1b>[0;32mI (246) efuse_init: Chip rev:         v0.0<0x1b>[0m
+<0x1b>[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:<0x1b>[0m
+<0x1b>[0;32mI (258) heap_init: At 3FFCC8F0 len 0002F710 (189 KiB): RAM<0x1b>[0m
+<0x1b>[0;32mI (264) heap_init: At 3FFFC000 len 00003A10 (14 KiB): RAM<0x1b>[0m
+<0x1b>[0;32mI (270) heap_init: At 3FF9E010 len 00001FD8 (7 KiB): RTCRAM<0x1b>[0m
+<0x1b>[0;32mI (277) spi_flash: detected chip: generic<0x1b>[0m
+<0x1b>[0;32mI (281) spi_flash: flash io: qio<0x1b>[0m
+<0x1b>[0;33mW (285) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.<0x1b>[0m
+<0x1b>[0;32mI (299) main_task: Started on CPU0<0x1b>[0m
+<0x1b>[0;32mI (299) main_task: Calling app_main()<0x1b>[0m
+<0x1b>[0;32mI (299) gpio: GPIO[5]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 <0x1b>[0m
+<0x1b>[0;32mI (309) gpio: GPIO[17]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 <0x1b>[0m
+<0x1b>[0;32mI (319) gpio: GPIO[10]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 <0x1b>[0m
+<0x1b>[0;32mI (329) gpio: GPIO[11]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 <0x1b>[0m
+<0x1b>[0;32mI (339) gpio: GPIO[12]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 <0x1b>[0m
+<0x1b>[0;32mI (349) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 <0x1b>[0m
+<0x1b>[0;32mI (359) gpio: GPIO[7]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 <0x1b>[0m
+<0x1b>[0;32mI (369) gpio: GPIO[8]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 <0x1b>[0m
+<0x1b>[0;32mI (379) gpio: GPIO[3]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 <0x1b>[0m
+<0x1b>[0;32mI (389) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 <0x1b>[0m
+<0x1b>[0;32mI (499) main: doing input simulation...<0x1b>[0m
+<0x1b>[0;32mI (619) main: start waiting...<0x1b>[0m
+<0x1b>[0;32mI (3619) main: timeout, stop waiting.<0x1b>[0m
+i2s_par  I2S0.int_raw.val: 0x000000e8 
+i2s_par  dma_descs[0]  size:96  length:0  eof:1  owner:1 
+<0x1b>[0;32mI (3719) main: doing input simulation...<0x1b>[0m
+<0x1b>[0;32mI (4069) main: start waiting...<0x1b>[0m
+<0x1b>[0;32mI (4069) main: received, HEAD: 0x01.<0x1b>[0m
+i2s_par  I2S0.int_raw.val: 0x00000068 
+i2s_par  dma_descs[0]  size:352  length:352  eof:1  owner:0 
+<0x1b>[0;32mI (4169) main: doing input simulation...<0x1b>[0m
+<0x1b>[0;32mI (4759) main: start waiting...<0x1b>[0m
+<0x1b>[0;32mI (4759) main: received, HEAD: 0x02.<0x1b>[0m
+i2s_par  I2S0.int_raw.val: 0x00000068 
+i2s_par  dma_descs[0]  size:608  length:608  eof:1  owner:0 
+<0x1b>[0;32mI (4859) main: doing input simulation...<0x1b>[0m
+<0x1b>[0;32mI (5679) main: start waiting...<0x1b>[0m
+<0x1b>[0;32mI (5679) main: received, HEAD: 0x03.<0x1b>[0m
+i2s_par  I2S0.int_raw.val: 0x00000068 
+i2s_par  dma_descs[0]  size:864  length:864  eof:1  owner:0 
+<0x1b>[0;32mI (5779) main: doing input simulation...<0x1b>[0m
+<0x1b>[0;32mI (6829) main: start waiting...<0x1b>[0m
+<0x1b>[0;32mI (6829) main: received, HEAD: 0x04.<0x1b>[0m
+i2s_par  I2S0.int_raw.val: 0x00000068 
+i2s_par  dma_descs[0]  size:1120  length:1120  eof:1  owner:0 
+<0x1b>[0;32mI (6929) main: doing input simulation...<0x1b>[0m
+<0x1b>[0;32mI (8209) main: start waiting...<0x1b>[0m
+<0x1b>[0;32mI (8209) main: received, HEAD: 0x05.<0x1b>[0m
+i2s_par  I2S0.int_raw.val: 0x00000068 
+i2s_par  dma_descs[0]  size:1376  length:1376  eof:1  owner:0 
+<0x1b>[0;32mI (8309) main: doing input simulation...<0x1b>[0m
+<0x1b>[0;32mI (9819) main: start waiting...<0x1b>[0m
+<0x1b>[0;32mI (9819) main: received, HEAD: 0x06.<0x1b>[0m
+i2s_par  I2S0.int_raw.val: 0x00000068 
+i2s_par  dma_descs[0]  size:1632  length:1632  eof:1  owner:0 
+<0x1b>[0;32mI (9919) main: doing input simulation...<0x1b>[0m
+<0x1b>[0;32mI (11659) main: start waiting...<0x1b>[0m
+<0x1b>[0;32mI (11659) main: received, HEAD: 0x07.<0x1b>[0m
+i2s_par  I2S0.int_raw.val: 0x00000068 
+i2s_par  dma_descs[0]  size:1888  length:1888  eof:1  owner:0 
+<0x1b>[0;32mI (11759) main: doing input simulation...<0x1b>[0m
+<0x1b>[0;32mI (13729) main: start waiting...<0x1b>[0m
+<0x1b>[0;32mI (13729) main: received, HEAD: 0x08.<0x1b>[0m
+i2s_par  I2S0.int_raw.val: 0x00000068 
+i2s_par  dma_descs[0]  size:2144  length:2144  eof:1  owner:0 
+<0x1b>[0;32mI (13829) main: doing input simulation...<0x1b>[0m
+<0x1b>[0;32mI (16039) main: start waiting...<0x1b>[0m
+<0x1b>[0;32mI (16039) main: received, HEAD: 0x09.<0x1b>[0m
+i2s_par  I2S0.int_raw.val: 0x00000068 
+i2s_par  dma_descs[0]  size:2400  length:2400  eof:1  owner:0 
+<0x1b>[0;32mI (16139) main: doing input simulation...<0x1b>[0m
+<0x1b>[0;32mI (18579) main: start waiting...<0x1b>[0m
+<0x1b>[0;32mI (18579) main: received, HEAD: 0x0a.<0x1b>[0m
+i2s_par  I2S0.int_raw.val: 0x00000068 
+i2s_par  dma_descs[0]  size:2656  length:2656  eof:1  owner:0 
+<0x1b>[0;32mI (18679) main: doing input simulation...<0x1b>[0m
+<0x1b>[0;32mI (21349) main: start waiting...<0x1b>[0m
+<0x1b>[0;32mI (21349) main: received, HEAD: 0x0b.<0x1b>[0m
+i2s_par  I2S0.int_raw.val: 0x00000068 
+i2s_par  dma_descs[0]  size:2912  length:2912  eof:1  owner:0 
+<0x1b>[0;32mI (21449) main: doing input simulation...<0x1b>[0m
+<0x1b>[0;32mI (24349) main: start waiting...<0x1b>[0m
+<0x1b>[0;32mI (24349) main: received, HEAD: 0x0c.<0x1b>[0m
+i2s_par  I2S0.int_raw.val: 0x00000068 
+i2s_par  dma_descs[0]  size:3168  length:3168  eof:1  owner:0 
+<0x1b>[0;32mI (24449) main: doing input simulation...<0x1b>[0m
+<0x1b>[0;32mI (27579) main: start waiting...<0x1b>[0m
+<0x1b>[0;32mI (27579) main: received, HEAD: 0x0d.<0x1b>[0m
+i2s_par  I2S0.int_raw.val: 0x00000068 
+i2s_par  dma_descs[0]  size:3424  length:3424  eof:1  owner:0 
+<0x1b>[0;32mI (27679) main: doing input simulation...<0x1b>[0m
+<0x1b>[0;32mI (31039) main: start waiting...<0x1b>[0m
+<0x1b>[0;32mI (31039) main: received, HEAD: 0x0e.<0x1b>[0m
+i2s_par  I2S0.int_raw.val: 0x00000068 
+i2s_par  dma_descs[0]  size:3600  length:3600  eof:0  owner:0 
+i2s_par  dma_descs[1]  size:80  length:80  eof:1  owner:0 
+<0x1b>[0;32mI (31149) main: doing input simulation...<0x1b>[0m
+<0x1b>[0;32mI (34749) main: start waiting...<0x1b>[0m
+<0x1b>[0;32mI (34749) main: received, HEAD: 0x0f.<0x1b>[0m
+i2s_par  I2S0.int_raw.val: 0x00000068 
+i2s_par  dma_descs[0]  size:3600  length:3600  eof:0  owner:0 
+i2s_par  dma_descs[1]  size:336  length:336  eof:1  owner:0 
+<0x1b>[0;32mI (34859) main: doing input simulation...<0x1b>[0m
+<0x1b>[0;32mI (38689) main: start waiting...<0x1b>[0m
+<0x1b>[0;32mI (38689) main: received, HEAD: 0x10.<0x1b>[0m
+i2s_par  I2S0.int_raw.val: 0x00000068 
+i2s_par  dma_descs[0]  size:3600  length:3600  eof:0  owner:0 
+i2s_par  dma_descs[1]  size:592  length:592  eof:1  owner:0 
+<0x1b>[0;32mI (38799) main: doing input simulation...<0x1b>[0m
+<0x1b>[0;32mI (42859) main: start waiting...<0x1b>[0m
+<0x1b>[0;32mI (42859) main: received, HEAD: 0x11.<0x1b>[0m
+i2s_par  I2S0.int_raw.val: 0x00000068 
+i2s_par  dma_descs[0]  size:3600  length:3600  eof:0  owner:0 
+i2s_par  dma_descs[1]  size:848  length:848  eof:1  owner:0 
+<0x1b>[0;32mI (42969) main: doing input simulation...<0x1b>[0m
+<0x1b>[0;32mI (47259) main: start waiting...<0x1b>[0m
+<0x1b>[0;32mI (47259) main: received, HEAD: 0x12.<0x1b>[0m
+i2s_par  I2S0.int_raw.val: 0x00000068 
+i2s_par  dma_descs[0]  size:3600  length:3600  eof:0  owner:0 
+i2s_par  dma_descs[1]  size:1104  length:1104  eof:1  owner:0 
+<0x1b>[0;32mI (47369) main: doing input simulation...<0x1b>[0m
+<0x1b>[0;32mI (51889) main: start waiting...<0x1b>[0m
+<0x1b>[0;32mI (51889) main: received, HEAD: 0x13.<0x1b>[0m
+i2s_par  I2S0.int_raw.val: 0x00000068 
+i2s_par  dma_descs[0]  size:3600  length:3600  eof:0  owner:0 
+i2s_par  dma_descs[1]  size:1360  length:1360  eof:1  owner:0 
+<0x1b>[0;32mI (51999) main: doing input simulation...<0x1b>[0m
+<0x1b>[0;32mI (52119) main: start waiting...<0x1b>[0m
+<0x1b>[0;32mI (52119) main: received, HEAD: 0x14.<0x1b>[0m
+i2s_par  I2S0.int_raw.val: 0x00000068 
+i2s_par  dma_descs[0]  size:96  length:96  eof:1  owner:0 
+<0x1b>[0;32mI (52219) main: doing input simulation...<0x1b>[0m
+<0x1b>[0;32mI (52569) main: start waiting...<0x1b>[0m
+<0x1b>[0;32mI (52569) main: received, HEAD: 0x15.<0x1b>[0m
+i2s_par  I2S0.int_raw.val: 0x00000068 
+i2s_par  dma_descs[0]  size:352  length:352  eof:1  owner:0 
+<0x1b>[0;32mI (52669) main: doing input simulation...<0x1b>[0m
+<0x1b>[0;32mI (53259) main: start waiting...<0x1b>[0m
+<0x1b>[0;32mI (53259) main: received, HEAD: 0x16.<0x1b>[0m
+i2s_par  I2S0.int_raw.val: 0x00000068 
+i2s_par  dma_descs[0]  size:608  length:608  eof:1  owner:0 
+<0x1b>[0;32mI (53359) main: doing input simulation...<0x1b>[0m
+<0x1b>[0;32mI (54179) main: start waiting...<0x1b>[0m
+<0x1b>[0;32mI (54179) main: received, HEAD: 0x17.<0x1b>[0m
+i2s_par  I2S0.int_raw.val: 0x00000068 
+i2s_par  dma_descs[0]  size:864  length:864  eof:1  owner:0 
+<0x1b>[0;32mI (54279) main: doing input simulation...<0x1b>[0m
+<0x1b>[0;32mI (55329) main: start waiting...<0x1b>[0m
+<0x1b>[0;32mI (55329) main: received, HEAD: 0x18.<0x1b>[0m
+i2s_par  I2S0.int_raw.val: 0x00000068 
+i2s_par  dma_descs[0]  size:1120  length:1120  eof:1  owner:0 
+<0x1b>[0;32mI (55429) main: doing input simulation...<0x1b>[0m
+<0x1b>[0;32mI (56709) main: start waiting...<0x1b>[0m
+<0x1b>[0;32mI (56709) main: received, HEAD: 0x19.<0x1b>[0m
+i2s_par  I2S0.int_raw.val: 0x00000068 
+i2s_par  dma_descs[0]  size:1376  length:1376  eof:1  owner:0 
+<0x1b>[0;32mI (56809) main: doing input simulation...<0x1b>[0m
